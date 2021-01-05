@@ -1,0 +1,19 @@
+body {
+    background: #dfe4ea;
+}
+
+.fade {
+    width: 80%;
+    margin: auto
+}
+
+a:focus {
+    outline: none;
+}
+
+.custom-img {
+    margin: 10px;
+    border-radius: 5px;
+    width: 247px!important;
+    height: 309px!important;
+}
