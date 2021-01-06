@@ -14,10 +14,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('slick');
+    return view('homepage');
 });
 
-Route::get("/item", function () {
+Route::get('/item', function () {
     return view('item');
 });
 
