@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('slider');
+    return view('homepage');
 });
 
 Route::get("/city/ha-noi", function () {

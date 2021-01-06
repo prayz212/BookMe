@@ -5,5 +5,6 @@ $(document).ready(function(){
       speed: 400,
       slidesToShow: 5,
       slidesToScroll: 1,
+      variableWidth: true,
     });
   });
