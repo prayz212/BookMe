@@ -17,3 +17,42 @@ a:focus {
     width: 247px!important;
     height: 309px!important;
 }
+
+
+/* hien thi tung item */
+.img-item {
+    border-radius: 3px;
+}
+
+.type-room-div {
+    color: rgb(118, 118, 118);
+}
+
+.rating-star {
+    color: black;
+    margin-left: 18%;
+}
+
+.information-item {
+    margin-top: 195px;
+}
+
+.discount-text {
+    position:absolute;
+    background-color: orangered;
+    border-radius: 25px;
+    padding: 1px 5px;
+    top: 15px;
+    left: 15px;
+}
+
+
+
+
+
+
+
+/* su dung lai */
+.mt--5 {
+    margin-top: 5px;
+}
