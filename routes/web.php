@@ -13,8 +13,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('homepage');
+use App\Http\Controllers\HomeController;
+Route::group(['prefix'=>'home'], function() {
+    Route::get('/', [HomeController::class, 'homepage']);
+
+    Route::get('/productlist', [HomeController::class, 'productlist']);
 });
 
 Route::get('/item', function () {

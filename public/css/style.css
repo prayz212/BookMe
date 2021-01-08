@@ -1,5 +1,5 @@
 body {
-    background: #dfe4ea;
+    background: #FFFFFF;
     box-sizing: border-box;
     margin: 0px;
 }
@@ -12,28 +12,95 @@ body {
     margin-top: 50px !important;
 }
 
+/* so trang */
+.custom-pagination {
+    display: inline-flex;
+}
+
+.custom-pagination a {
+    color: black;
+    border-radius: 50%;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+}
+
+.custom-pagination a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.custom-pagination a:hover {
+    text-decoration: none;
+}
+
+.custom-pagination li {
+    list-style-type: none;
+}
+
+.custom-pagination a:hover:not(.active) {
+    background-color: #daad;
+}
+
+/* product-page */
+.filter-navbar {
+    padding: 12px 44.8px;
+    position: fixed;
+    top: 80px;
+    height: 60px;
+    width: 100%;
+    z-index: 50;
+    background: #FFFFFF;
+}
+
+.btn-reference {
+    background: #FFFFFF;
+    padding: 7px 11.2px;
+    margin: 0px 12px 0px 0px;
+    border-radius: 5px;
+    border: 1px solid rgb(179, 184, 179);
+    height: 36px;
+    cursor: pointer;
+}
+
+.btn-reference:hover {
+    background: #f65e39;
+    border-color: #f65e39;
+    color: #FFFFFF;
+}
+
+.banner {
+    margin-top: 60px;
+}
+
+.btn-reference:focus {
+    outline: none;
+}
+
 /* home page */
-.navbar {
+.default-navbar {
     background: red;
     height: 80px;
     position: fixed;
     top: 0px;
     width: 100%;
-    z-index: 2;
+    z-index: 50;
+    border-bottom: 1px solid #f2f2f2;
 }
 
-.navbar2 {
+.navbar-hide {
     background: goldenrod;
     height: 80px;
     position: fixed;
     top: -80px;
     width: 100%;
     transition: top 0.1s;
-    z-index: 2;
+    z-index: 50;
 }
 
-.container {
-    margin: 0px 66.8px;
+.custom-container {
+    margin: auto;
     padding: 0px 44.8px;
 }
 
@@ -43,7 +110,7 @@ body {
 }
 
 .page-body {
-    margin: 120px 0px 0px;
+    margin: 120px 66.8px 0px;
 }
 
 .footer {
@@ -62,6 +129,21 @@ a:focus {
     height: 309px!important;
 }
 
+.dic {
+    position: relative;
+}
+
+.img-text {
+    position: absolute;
+    bottom: 1.5rem;
+    left: 2rem;
+    z-index: 100;
+    color: white;
+}
+
+.img-text h2 {
+    margin: 12px 0px 4px;
+}
 
 /* hien thi tung item */
 .img-item {
@@ -74,7 +156,7 @@ a:focus {
 
 .rating-star {
     color: black;
-    margin-left: 18%;
+    margin-left: 10px;
 }
 
 .information-item {
@@ -90,31 +172,7 @@ a:focus {
     left: 15px;
 }
 
-
-
-
-
-
-
 /* su dung lai */
 .mt--5 {
     margin-top: 5px;
-    width: 247px !important;
-    height: 309px !important;
-}
-
-.dic {
-    position: relative;
-}
-
-.img-text {
-    position: absolute;
-    bottom: 1.5rem;
-    left: 2rem;
-    z-index: 100;
-    color: white;
-}
-
-.img-text h2 {
-    margin: 12px 0px 4px;
 }
