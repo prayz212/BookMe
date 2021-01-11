@@ -3,7 +3,7 @@
     <p> {{ $slick_object[0]->content }} </p>
 </div>
 
-<div class="fade custom-slick">
+<div class="responsive">
   @foreach ($slick_object as $item)
   <div class="dic">
     <a href="home/location/{{ $item->name }}">

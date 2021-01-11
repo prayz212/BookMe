@@ -1,10 +1,11 @@
 body {
-    background: #FFFFFF;
+    background: #f2f2f2;
     box-sizing: border-box;
     margin: 0px;
 }
 
 *, :after, :before {
+    background: #f2f2f2;
     box-sizing: inherit;
 }
 
@@ -12,7 +13,7 @@ body {
     margin-top: 50px !important;
 }
 
-/* so trang */
+/* pagination */
 .custom-pagination {
     display: inline-flex;
 }
@@ -33,6 +34,7 @@ body {
 
 .custom-pagination a:hover {
     text-decoration: none;
+    color: white;
 }
 
 .custom-pagination li {
@@ -40,10 +42,56 @@ body {
 }
 
 .custom-pagination a:hover:not(.active) {
-    background-color: #daad;
+    background-color: rgba(206, 199, 199, 0.867);
+}
+
+.pagi-num {
+    display: block;
+    text-align: center;
 }
 
 /* product-page */
+.product-images {
+    height: 300px;
+    width: 100%;
+    justify-content: center;
+    position: relative;
+    padding-left: 14px;
+    padding-right: 14px;
+}
+
+.images {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.image1 {
+    width: 50%;
+    height: 100%;
+    background: blue;
+}
+
+.image2, .image3, .image4, .image5 {
+    width: 50%;
+    height: 50%;
+    border: 1px solid black;
+    background: chartreuse;
+}
+
+.show-product-images {
+    bottom: 24px;
+    right: 40px;
+    position: absolute;
+}
+
+/* product-list-page */
 .filter-navbar {
     padding: 12px 44.8px;
     position: fixed;
@@ -51,11 +99,11 @@ body {
     height: 60px;
     width: 100%;
     z-index: 50;
-    background: #FFFFFF;
+    background: #f2f2f2;
 }
 
 .btn-reference {
-    background: #FFFFFF;
+    background: #f2f2f2;
     padding: 7px 11.2px;
     margin: 0px 12px 0px 0px;
     border-radius: 5px;
@@ -67,7 +115,7 @@ body {
 .btn-reference:hover {
     background: #f65e39;
     border-color: #f65e39;
-    color: #FFFFFF;
+    color: #f2f2f2;
 }
 
 .banner {
@@ -80,7 +128,7 @@ body {
 
 /* home page */
 .default-navbar {
-    background: red;
+    background: #f2f2f2;
     height: 80px;
     position: fixed;
     top: 0px;
@@ -89,7 +137,7 @@ body {
     border-bottom: 1px solid #f2f2f2;
 }
 
-.navbar-hide {
+.navbar2 {
     background: goldenrod;
     height: 80px;
     position: fixed;
