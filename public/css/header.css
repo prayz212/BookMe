@@ -1,0 +1,77 @@
+.header {
+    height: 80px;
+    border-bottom: 1px solid rgb(230, 228, 228);
+}
+
+.logo-header {
+    width: 65px;
+    height: 65px;
+}
+
+.search-input {
+    outline: none;
+    border: none;
+}
+
+.vl {
+    border-left: 1px solid rgb(221, 221, 221);
+    height: 40px;
+}
+
+.dropdown-menu {
+    width: 320px;
+}
+
+.dropdown-item-text {
+    display: flex;
+}
+
+.minus,
+.plus {
+    border-radius: 15px;
+    width: 30px;
+    height: 30px;
+    padding: 6px 0px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.input-people {
+    width: 15px;
+    border: none;
+    outline: none;
+}
+
+.search-button {
+    width: 55px;
+    height: 35px;
+}
+
+.search-box {
+    border-radius: 10px;
+    min-width: 650px;
+}
+
+.btn-cancel,
+.btn-apply {
+    border: none;
+    background-color: inherit;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.btn-apply {
+    color: rgb(238, 111, 65);
+}
+
+#input {
+    width: 180px;
+    outline: none;
+    border: none;
+}
+
+.datepicker {
+    width: 400px;
+}
