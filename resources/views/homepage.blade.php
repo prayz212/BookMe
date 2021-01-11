@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>BookMe</title>
-    
+
     <link rel="stylesheet" type="text/css" href="{{asset('css/style.css')}}"/>
 
     <!-- slick css -->
@@ -23,37 +23,28 @@
 <body>
 
     <!-- page header -->
-    <div class="default-navbar"></div>
+    <div class="navbar"></div>
+    <div id="navbar2" class="navbar2"></div>
 
     <!-- page body -->
     <div class="page-body">
-        <div class="custom-container">
-            @include('slick')
+        <div class="container">
+            @include('slick', ['slick_object' => $slick_1])
         </div>
 
-        <div class="mt--50"></div>
-        <div class="custom-container">
-            @include('slick')
+        <div class="container mt--50">
+            @include('slick', ['slick_object' => $slick_2])
         </div>
 
-        <div class="mt--50"></div>
-        <div class="custom-container">
-            @include('slick')
-        </div>
-
-        <div class="mt--50"></div>
-        <div class="custom-container">
-            @include('slick')
-        </div>
-        
-        <div class="mt--50"></div>
-        <div class="custom-container">
-            @include('slick')
+        <div class="container mt--50">
+            @include('slick', ['slick_object' => $slick_3])
         </div>
     </div>
 
     <!-- page footer -->
-    @include('page_footer')
+    <div class="footer">
+        <div style="background: orange; height: 50px; width:100%"></div>
+    </div>
 
 </body>
 </html>

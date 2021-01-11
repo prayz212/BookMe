@@ -13,16 +13,23 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-use App\Http\Controllers\HomeController;
-Route::group(['prefix'=>'home'], function() {
-    Route::get('/', [HomeController::class, 'homepage']);
+use App\Http\Controllers\HomepageController;
+use App\Models\Room;
+use App\Models\RoomType;
 
-    Route::get('/productlist', [HomeController::class, 'productlist']);
+Route::get('/', function () {
+    return redirect('/home');
 });
 
-Route::get('/item', function () {
-    return view('item');
+Route::prefix('home')->group(function () {
+    Route::get('', [HomepageController::class, 'ShowHomePage']);
+
+    Route::get('location/{search_key}', function($search_key) {
+        return 'home/location with param: ' . $search_key;
+    });
 });
+
+Route::get('city/item', [HomepageController::class, 'ShowRoomList']);
 
 Route::get("/city/ha-noi", function () {
     return "this is hanoi";
@@ -30,4 +37,14 @@ Route::get("/city/ha-noi", function () {
 
 Route::get("/city/ho-chi-minh", function () {
     return "this is hcm";
+});
+
+Route::get('test', function() {
+    $room = new App\Models\Room();
+    $room->room_name = 'name';
+    $room->room_type = 'type';
+    $room->num_bedroom = 3;
+    $room->rating_star = 5.0;
+
+    $room->save();
 });
